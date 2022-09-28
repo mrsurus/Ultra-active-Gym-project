@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "name": "Dumble",
+        "age": "20-25",
+        "time": "20m",
+        "ratings": 4,
+        "details":"By doing this you will get a great body fitness.Practice everyday and stay healthy.",
+        "img": "https://www.freepik.com/free-photo/handsome-black-man-is-engaged-gym_6633954.htm#query=gym&position=1&from_view=search",
+        "quantity": 0
+      },
+    {
+        "id": "2",
+        "name": "Push-in",
+        "age": "20-25",
+        "time": "20m",
+        "ratings": 4,
+        "details":"By doing this you will get a great body fitness.Practice everyday and stay healthy.",
+        "img": "https://www.freepik.com/free-photo/young-healthy-man-athlete-doing-exercise-with-ropes-gym-single-male-model-practicing-hard-training-his-upper-body-concept-healthy-lifestyle-sport-fitness-bodybuilding-wellbeing_12836358.htm#query=gym&position=5&from_view=search",
+        "quantity": 0
+      },
+    {
+        "id": "3",
+        "name": "Push-up",
+        "age": "20-25",
+        "time": "20m",
+        "ratings": 4,
+        "details":"By doing this you will get a great body fitness.Practice everyday and stay healthy.",
+        "img": "https://www.freepik.com/free-photo/young-man-trains-gym_26202863.htm#query=gym&position=16&from_view=search",
+        "quantity": 0
+      },
+    {
+        "id": "4",
+        "name": "Dumble",
+        "age": "20-25",
+        "time": "20m",
+        "ratings": 4,
+        "details":"By doing this you will get a great body fitness.Practice everyday and stay healthy.",
+        "img": "https://www.freepik.com/free-photo/handsome-black-man-is-engaged-gym_6632322.htm#query=gym&position=4&from_view=search",
+        "quantity": 0
+      },
+    {
+        "id": "5",
+        "name": "Dumble",
+        "age": "20-25",
+        "time": "20m",
+        "ratings": 4,
+        "details":"By doing this you will get a great body fitness.Practice everyday and stay healthy.",
+        "img": "https://www.freepik.com/free-photo/muscular-sportsman-building-biceps-with-dumbbell_8794691.htm#query=gym&position=8&from_view=search",
+        "quantity": 0
+      },
+    {
+        "id": "6",
+        "name": "Dumble",
+        "age": "20-25",
+        "time": "20m",
+        "ratings": 4,
+        "details":"By doing this you will get a great body fitness.Practice everyday and stay healthy.",
+        "img": "https://www.freepik.com/free-photo/young-muscular-caucasian-athlete-practicing-gym-with-weights_13633584.htm#query=gym&position=29&from_view=search",
+        "quantity": 0
+      }
+]
