@@ -26,8 +26,6 @@ const Body = () => {
 )
     }
 
-
-    console.log(cart)
     return (
         <div className='body'> 
             <div className="left-side">

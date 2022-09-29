@@ -14,8 +14,8 @@ const Rcardbody = ({cart,completeActivity}) => {
    }
    
    useEffect(()=>{
-    const s = JSON.parse(localStorage.getItem('break-time'))
-   setBrtime(s)
+    const getFromLocalStorage = JSON.parse(localStorage.getItem('break-time'))
+   setBrtime(getFromLocalStorage)
 
    },[])
    
