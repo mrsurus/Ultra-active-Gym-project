@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../../images/Man.jpg'
 import './Rcardbody.css'
 
 const Rcardbody = ({cart}) => {
+    const [brtime, setBrtime] =useState([])
+
    let time = 0
    if(cart.length){
    
     for(const product of cart){
         time = time + product.time
-        console.log(time)
     }
+   }
+   
+   useEffect(()=>{
+    const s = JSON.parse(localStorage.getItem('break-time'))
+   setBrtime(s)
+
+   },[])
+   
+   
+   const clicledOnTime= (id) =>{
+    setBrtime(id)
+    localStorage.setItem('break-time',JSON.stringify(id))
+    
    }
 
     return (
@@ -42,11 +56,11 @@ const Rcardbody = ({cart}) => {
                 
                <h2>Add A Break</h2>
                 <div className='break-time'>
-                        <h3>10m</h3>
-                        <h3>20m</h3>
-                        <h3>30m</h3>
-                        <h3>40m</h3>
-                        <h3>50m</h3>
+                        <h3 onClick={(e) =>clicledOnTime(e.target.innerText)}>10m</h3>
+                        <h3 onClick={(e) =>clicledOnTime(e.target.innerText)}>20m</h3>
+                        <h3 onClick={(e) =>clicledOnTime(e.target.innerText)}>30m</h3>
+                        <h3 onClick={(e) =>clicledOnTime(e.target.innerText)}>40m</h3>
+                        <h3 onClick={(e) =>clicledOnTime(e.target.innerText)}>50m</h3>
                 </div>
                 <div className="exercise">
                     <h1>Exercise Details</h1>
@@ -56,7 +70,7 @@ const Rcardbody = ({cart}) => {
                     </div>
                     <div className="ex-time">
                         <h2>Break Time:</h2>
-                        <h2 id='br-time'></h2>
+                        <h2 id='br-time'>{brtime}</h2>
                     </div>
                 </div>
                 <button className='rcard-btn'>Activity Complete</button>
