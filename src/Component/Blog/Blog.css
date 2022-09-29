@@ -1,0 +1,17 @@
+
+.blog-body{
+    text-align: center;
+    background-color: skyblue;
+}
+.show-blog{
+    text-align: center;
+    background-color: green;
+    margin: 20px 100px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.blog{
+    margin: 10px 100px;
+}
