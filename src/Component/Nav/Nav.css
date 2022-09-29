@@ -1,0 +1,15 @@
+.nav{
+    background-color: rgb(234, 31, 42);
+    padding: 10px 0;
+    color: white;
+    text-align: left;
+    
+}
+.nav-m{
+    display: flex;
+    margin-left: 10%;
+}
+.nav img{
+    width: 80px;
+    margin: 0 10px;
+}

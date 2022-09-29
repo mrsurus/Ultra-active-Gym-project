@@ -1,0 +1,24 @@
+
+.card{
+    width: 90%;
+    border: 1px solid gray;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.card-info{
+    margin-left: 7%;
+}
+.card-btn{
+    width: 100%;
+    border: none;
+    font-size: medium;
+    font-weight: bold;
+    padding: 15px 0;
+    background-color: rgb(169, 97, 240);
+    color: white;
+}

@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../Card/Card';
+import Rcardbody from '../Rightcartbody/Rcardbody';
+import './Body.css'
 
 const Body = () => {
     const [data, setData] = useState([])
@@ -10,12 +13,19 @@ const Body = () => {
 
     
     return (
-        <div>
-            <h2>Say hi to my new assignment</h2>
-            {
-                data.map(pb => <img src={pb.img}></img>)
-            }
-            <img src="" alt="" />
+        <div className='body'> 
+            <div className="left-side">
+                <h2>Todays session</h2>
+                <div className="card-container">
+                    {
+                        data.map(data =><Card data = {data}></Card>)
+                    }
+                </div>
+            </div>
+
+            <div className="right-side">
+                    <Rcardbody></Rcardbody>
+            </div>
         </div>
     );
 };

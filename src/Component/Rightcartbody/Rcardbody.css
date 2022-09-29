@@ -1,0 +1,55 @@
+.right-cart{
+    margin: 8%;
+}
+.profile{
+    display: flex;
+    margin-bottom: 10px;
+}
+.image{
+    width: 40%; 
+    padding: 15px 0px;
+}
+.image img{
+    width: 100%;
+    border-radius: 80%;
+   
+}
+.profile-det{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(234, 232, 232);
+    border-radius: 10px;
+    
+}
+.break-time{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(234, 232, 232);
+    border-radius: 10px;
+}
+.break-time h3{
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding: 14px 8px;
+}
+.ex-time{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(234, 232, 232);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.ex-time h2{
+    width: 50%;
+    padding-left: 10px;
+}
+.rcard-btn{
+    width: 100%;
+    border: none;
+    font-size: x-large;
+    padding: 25px 0;
+    background-color: rgb(40, 243, 54);
+    border-radius: 10px;
+    margin-top: 10px;
+    color: rgb(249, 248, 251);
+}

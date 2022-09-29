@@ -1,0 +1,13 @@
+.body{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 5px;  
+}
+.left-side{
+    padding-left: 14%;
+    background-color: rgb(234, 227, 216);
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
