@@ -2,7 +2,16 @@ import React from 'react';
 import logo from '../../images/Man.jpg'
 import './Rcardbody.css'
 
-const Rcardbody = () => {
+const Rcardbody = ({cart}) => {
+   let time = 0
+   if(cart.length){
+   
+    for(const product of cart){
+        time = time + product.time
+        console.log(time)
+    }
+   }
+
     return (
         <div>
             <div className="right-cart">
@@ -43,11 +52,11 @@ const Rcardbody = () => {
                     <h1>Exercise Details</h1>
                     <div className="ex-time">
                         <h2>Exercise Time:</h2>
-                        <h2></h2>
+                        <h2 id='ex-time'> {time}m</h2>
                     </div>
                     <div className="ex-time">
                         <h2>Break Time:</h2>
-                        <h2></h2>
+                        <h2 id='br-time'></h2>
                     </div>
                 </div>
                 <button className='rcard-btn'>Activity Complete</button>

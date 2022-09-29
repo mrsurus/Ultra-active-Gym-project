@@ -5,26 +5,37 @@ import './Body.css'
 
 const Body = () => {
     const [data, setData] = useState([])
+    const [cart, setCart] = useState([])
     useEffect(()=>{
         fetch('fakedata.json')
         .then(res => res.json())
         .then(data => setData(data))
     },[])
 
-    
+
+    const getAddToList = (data) =>{
+        const newData = [...cart,data]
+       setCart(newData)
+    }
+    console.log(cart)
     return (
         <div className='body'> 
             <div className="left-side">
                 <h2>Todays session</h2>
                 <div className="card-container">
                     {
-                        data.map(data =><Card data = {data}></Card>)
+                        data.map(data =><Card 
+                            data = {data}
+                            getAddToList = {getAddToList}
+                            key = {data.id}
+
+                            ></Card>)
                     }
                 </div>
             </div>
 
             <div className="right-side">
-                    <Rcardbody></Rcardbody>
+                   <Rcardbody cart={cart} ></Rcardbody>
             </div>
         </div>
     );

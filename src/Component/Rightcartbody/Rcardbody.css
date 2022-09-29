@@ -18,8 +18,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(234, 232, 232);
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
 .break-time{
     display: flex;
@@ -53,3 +52,44 @@
     margin-top: 10px;
     color: rgb(249, 248, 251);
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+
+    .profile-det{
+        text-align: center;
+        display: inline;
+        background-color: rgb(153, 144, 144);
+        border-radius: 10px;  
+    }
+
+    .break-time{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .break-time h3{
+        background-color: aliceblue;
+        border-radius: 50%;
+        margin: 5px 10px;
+        padding: 30px 0;
+        text-align: center;
+    }
+}
+/* @media only screen and (max-width: 700px) {
+    .profile-det{
+        display: flex;
+    }
+
+
+    .break-time{
+        display: flex;
+        }
+
+    .break-time h3{
+            background-color: aliceblue;
+           padding: 15px 10px;
+            
+        }    
+
+} */
