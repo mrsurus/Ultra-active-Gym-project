@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from '../../images/Man.jpg'
 import './Rcardbody.css'
 
-const Rcardbody = ({cart}) => {
+const Rcardbody = ({cart,completeActivity}) => {
     const [brtime, setBrtime] =useState([])
 
    let time = 0
@@ -18,7 +18,6 @@ const Rcardbody = ({cart}) => {
    setBrtime(s)
 
    },[])
-   
    
    const clicledOnTime= (id) =>{
     setBrtime(id)
@@ -73,7 +72,7 @@ const Rcardbody = ({cart}) => {
                         <h2 id='br-time'>{brtime}</h2>
                     </div>
                 </div>
-                <button className='rcard-btn'>Activity Complete</button>
+                <button onClick={completeActivity} className='rcard-btn'>Activity Complete</button>
               </div>       
         </div>
     );

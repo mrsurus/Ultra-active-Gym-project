@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import Rcardbody from '../Rightcartbody/Rcardbody';
 import './Body.css'
+import Swal from 'sweetalert2'
 
 const Body = () => {
     const [data, setData] = useState([])
@@ -17,6 +18,15 @@ const Body = () => {
         const newData = [...cart,data]
        setCart(newData)
     }
+    const completeActivity = () =>{
+        Swal.fire(
+        'Good job!',
+        'You completed your activity!',
+        'success'
+)
+    }
+
+
     console.log(cart)
     return (
         <div className='body'> 
@@ -35,7 +45,7 @@ const Body = () => {
             </div>
 
             <div className="right-side">
-                   <Rcardbody cart={cart} ></Rcardbody>
+                   <Rcardbody cart={cart} completeActivity= {completeActivity}  ></Rcardbody>
             </div>
         </div>
     );
