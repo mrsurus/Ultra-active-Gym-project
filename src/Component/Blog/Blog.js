@@ -18,7 +18,7 @@ const Blog = () => {
             </div>
             <div className="blog">
                 <h1>Diferrenc between Props and State</h1>
-                <p> The key difference between props and state is that state is internal and controlled by the component itself while props are external and 
+                <p> and 
                     controlled by whatever renders the component. props (short for “properties”) and state are both plain JavaScript objects. While both hold 
                     information that influences the output of render, they are different in one important way: props get passed to the component (similar to function
                      parameters) whereas state is managed within the component (similar to variables declared within a function).props (short for “properties”) and state are both plain JavaScript objects. While both hold information that influences the output of render, they are different in one important way: props get passed to the component (similar to function parameters) whereas state is managed within the component (similar to variables declared within a function).
