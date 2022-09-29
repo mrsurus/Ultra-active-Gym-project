@@ -40,15 +40,15 @@ const Rcardbody = ({cart,completeActivity}) => {
                   </div>
                   <div className="profile-det">
                         <div className="Weight">
-                            <h1>75kg</h1>
+                            <h1>55kg</h1>
                             <p>Weight</p>
                         </div>
                         <div className="height">
-                            <h1>6.6in</h1>
+                            <h1>5.7ft</h1>
                             <p>Height</p>
                         </div>
                         <div className="age">
-                            <h1>25yrs</h1>
+                            <h1>22yrs</h1>
                             <p>Age</p>
                         </div>
                   </div>
