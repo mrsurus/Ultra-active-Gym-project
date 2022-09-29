@@ -7,10 +7,10 @@ const Blog = () => {
             <h1 className='show-blog'>Blog</h1>
             <div className="blog">
                 <h1>How does react work?</h1>
-                <p> While building client-side apps, a team of Facebook developers realized that the DOM is slow (The Document Object Model (DOM) 
+                <p> The Document Object Model (DOM) 
                     is an application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a
-                     document is accessed and manipulated.). 
-                    So, to make it faster, React implements a virtual DOM that is basically a DOM tree representation in JavaScript. 
+                     document is accessed and manipulated. 
+                    So, React make it faster, React implements a virtual DOM that is basically a DOM tree representation in JavaScript. 
                     So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the 
                     most efficient way to update the browser’s DOM.Unlike browser DOM elements, React elements are plain objects and are cheap to create.
                      React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it’s worth
